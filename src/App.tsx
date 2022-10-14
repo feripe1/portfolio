@@ -22,7 +22,7 @@ function App() {
   const ModelWrapperRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    Aos.init({ duration: 700, once: true });
+    Aos.init({ duration: 1200, once: true });
 
     window.scroll({
       top: 0,
@@ -53,23 +53,26 @@ function App() {
 
       <ModelWrapper ref={ModelWrapperRef}>
         <ModelContent css={{ backgroundColor: '$bg1' }} id="home">
-          <Title
-            size={{ '@initial': 'big', '@dsk2': 'biggest' }}
-            color={'secondary'}
-            data-aos="fade-up"
-          >
-            Olá, me chamo
-          </Title>
-          <Title size={{ '@initial': 'big', '@dsk2': 'biggest' }} data-aos="fade-up">
-            Felipe Brito
-          </Title>
-          <Title
-            size={{ '@initial': 'small', '@dsk2': 'normal' }}
-            color={'secondary'}
-            data-aos="fade-up"
-          >
-            Sou desenvolvedor front-end
-          </Title>
+          <div style={{ textAlign: 'center' }}>
+            <Title
+              size={{ '@initial': 'big', '@dsk2': 'biggest' }}
+              color={'secondary'}
+              data-aos="fade-up"
+            >
+              Olá, me chamo
+            </Title>
+            <Title size={{ '@initial': 'big', '@dsk2': 'biggest' }} data-aos="fade-up">
+              Felipe Brito
+            </Title>
+            <Title
+              size={{ '@initial': 'small', '@dsk2': 'normal' }}
+              color={'secondary'}
+              data-aos="fade-up"
+            >
+              Sou desenvolvedor front-end
+            </Title>
+          </div>
+
           <div style={{ display: 'flex', margin: '1.5rem 0 0 0' }} data-aos="fade-up">
             <Icon
               IconSrc={FaLinkedin}
@@ -83,12 +86,12 @@ function App() {
         </ModelContent>
 
         <ModelContent css={{ backgroundColor: '$bg2' }} id="about">
-          <Title data-aos="fade-up" size={'big'}>
+          <Title data-aos="fade-up" size={'big'} data-aos-delay="200">
             Sobre mim
           </Title>
 
-          <MeImg data-aos="fade-up" src={meImg} />
-          <AboutContainer data-aos="fade-up">
+          <MeImg data-aos="fade-up" src={meImg} data-aos-delay="200" />
+          <AboutContainer data-aos="fade-up" data-aos-delay="200">
             <div style={{ flex: 1, width: '320px' }}>
               <Title size={'small'} border>
                 Informações

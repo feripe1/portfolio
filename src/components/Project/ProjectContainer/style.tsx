@@ -1,8 +1,8 @@
 import { css } from '../../../style/stitches.config';
 
 export const Container = css({
-  width: '320px',
-  height: '160px',
+  width: '240px',
+  height: '120px',
   padding: '1.25rem',
   display: 'flex',
   gap: '16px',
