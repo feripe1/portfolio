@@ -2,14 +2,14 @@ import { css } from '../../style/stitches.config';
 
 export const Header = css({
   position: 'fixed',
-  width: 'calc(100%)',
+  width: 'calc(100% - 4px)',
   top: 0,
   backgroundColor: '$header',
   transition: 'all 0.75s',
   display: 'flex',
   justifyContent: 'center',
   padding: '0 2rem',
-  zIndex: 99999,
+  zIndex: 9999,
 });
 
 export const Container = css({

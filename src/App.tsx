@@ -149,25 +149,10 @@ function App() {
           <Title size={'big'} data-aos="fade-up" data-aos-delay="100">
             Projetos
           </Title>
-          <ProjectList>
-            <ProjectContainer
-              data-aos="fade-up"
-              data-aos-delay="100"
-              title="Em breve"
-              subtitle="Em breve"
-            />
-            <ProjectContainer
-              data-aos="fade-up"
-              data-aos-delay="200"
-              title="Em breve"
-              subtitle="Em breve"
-            />
-            <ProjectContainer
-              data-aos="fade-up"
-              data-aos-delay="300"
-              title="Em breve"
-              subtitle="Em breve"
-            />
+          <ProjectList data-aos="fade">
+            <ProjectContainer title="Projeto 1" subtitle="Em breve" />
+            <ProjectContainer title="Projeto 2" subtitle="Em breve" />
+            <ProjectContainer title="Projeto 3" subtitle="Em breve" />
           </ProjectList>
           <NextPage reset href="#home" data-aos="fade" data-aos-delay="300" />
         </ModelContent>

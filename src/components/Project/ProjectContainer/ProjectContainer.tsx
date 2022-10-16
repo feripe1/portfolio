@@ -21,11 +21,9 @@ export const ProjectContainer = ({
 }: ProjectContainerProps) => {
   return (
     <StyledContainer {...props}>
-      <div>
-        <Title size={'smallest'}>{title}</Title>
-        <Text>{subtitle}</Text>
-      </div>
-      <StyledImg src={img} />
+      <Title size={'smallest'}>{title}</Title>
+      <Text>{subtitle}</Text>
+      {/* <StyledImg src={img} /> */}
     </StyledContainer>
   );
 };

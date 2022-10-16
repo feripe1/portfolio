@@ -17,6 +17,14 @@ export const global = globalCss({
   },
 
   '::-webkit-scrollbar': {
-    display: 'none',
+    width: '3px',
+  },
+
+  '::-webkit-scrollbar-track': {
+    backgroundColor: '$bgalthover',
+  },
+
+  '::-webkit-scrollbar-thumb': {
+    backgroundColor: '$primary',
   },
 });

@@ -6,6 +6,7 @@ export const ModelContent = css({
   alignItems: 'center',
   padding: '0 1.25rem',
   flexDirection: 'column',
+  width: '100vw',
   height: '100vh',
   scrollSnapAlign: 'start',
   scrollSnapStop: 'always',

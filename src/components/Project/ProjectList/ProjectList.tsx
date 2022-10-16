@@ -7,6 +7,6 @@ const StyledProjectList = styled('ul', ProjectListCSS);
 
 type StyledProjectProps = React.ComponentProps<typeof StyledProjectList>;
 
-export const ProjectList = ({ children }: StyledProjectProps) => {
-  return <StyledProjectList>{children}</StyledProjectList>;
+export const ProjectList = ({ children, ...props }: StyledProjectProps) => {
+  return <StyledProjectList {...props}>{children}</StyledProjectList>;
 };

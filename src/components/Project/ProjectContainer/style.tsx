@@ -1,22 +1,16 @@
 import { css } from '../../../style/stitches.config';
 
 export const Container = css({
-  width: '240px',
-  height: '120px',
+  minWidth: '100%',
+  minHeight: 'calc(100vh - 240px)',
   padding: '1.25rem',
   display: 'flex',
-  gap: '16px',
-  borderRadius: '16px',
-  border: '3px solid',
-  borderColor: '$bgalt',
+  justifyContent: 'center',
+  alignItems: 'center',
+  flexDirection: 'column',
   listStyle: 'none',
-  justifyContent: 'space-between',
-  position: 'relative',
-
-  '@dsk2': {
-    height: '300px',
-    flexDirection: 'column',
-  },
+  scrollSnapAlign: 'start',
+  scrollSnapStop: 'always',
 });
 
 export const Img = css({
