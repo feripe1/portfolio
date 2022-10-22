@@ -1,21 +1,17 @@
 import React from 'react';
 import { styled } from '../../../style/stitches.config';
-import { FaArrowDown, FaArrowUp } from 'react-icons/fa';
+import { FaArrowDown } from 'react-icons/fa';
 
 import { NextPage as NextPageCSS } from './style';
 
 const StyledNextPage = styled('a', NextPageCSS);
 
-interface NextPageProps extends React.ComponentProps<typeof StyledNextPage> {
-  value?: string;
-  reset?: boolean;
-}
+type NextPageProps = React.ComponentProps<typeof StyledNextPage>;
 
-export const NextPage = ({ value, reset = false, ...props }: NextPageProps) => {
+export const NextPage = ({ ...props }: NextPageProps) => {
   return (
     <StyledNextPage {...props}>
-      {value}
-      {reset ? <FaArrowUp /> : <FaArrowDown />}
+      <FaArrowDown />
     </StyledNextPage>
   );
 };

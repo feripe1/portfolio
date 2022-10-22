@@ -16,6 +16,8 @@ import {
 import { FaLinkedin, FaGithub, FaRegEnvelope } from 'react-icons/fa';
 import { AboutContainer, MeImg } from './style';
 import meImg from './assets/me.jpg';
+import sitePokemon from './assets/sitepokemon.png';
+import fasterPokemon from './assets/fasterpokemon.png';
 
 function App() {
   global();
@@ -146,15 +148,31 @@ function App() {
         </ModelContent>
 
         <ModelContent css={{ backgroundColor: '$bg3' }} id="projects">
-          <Title size={'big'} data-aos="fade-up" data-aos-delay="100">
+          <Title size={'big'} data-aos="fade" data-aos-delay="100">
             Projetos
           </Title>
           <ProjectList data-aos="fade">
-            <ProjectContainer title="Projeto 1" subtitle="Em breve" />
-            <ProjectContainer title="Projeto 2" subtitle="Em breve" />
-            <ProjectContainer title="Projeto 3" subtitle="Em breve" />
+            <ProjectContainer
+              title="Site de Pokemóns"
+              img={sitePokemon}
+              subtitle="Site para listagem de alguns pokemóns
+              com paginação, requisição API com getStaticProps e
+              sistema de favoritos com armazenamento em local storage.
+              Desenvolvido em Typescript e NextJS com a lib Stitches"
+              github="https://github.com/feripe1/sitepokemon"
+              demo="https://sitepokemon.vercel.app/"
+            />
+            <ProjectContainer
+              title="Pokemón mais rápido"
+              img={fasterPokemon}
+              subtitle="Jogo simples onde o usuário adivinha qual o
+              pokemón com a maior velocidade base.
+              Realizei esse site com intuito de estudar NextJS e TailwindCSS.
+              Desenvolvido em Typescript e NextJs."
+              github="https://github.com/feripe1/fasterpokemon"
+              demo="https://fasterpokemon.vercel.app/"
+            />
           </ProjectList>
-          <NextPage reset href="#home" data-aos="fade" data-aos-delay="300" />
         </ModelContent>
       </ModelWrapper>
     </>

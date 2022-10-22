@@ -5,7 +5,7 @@ export const NextPage = css({
   alignItems: 'center',
   gap: '10px',
   position: 'absolute',
-  bottom: '120px',
+  bottom: '20%',
   padding: '8px 16px',
   border: '1px solid $secondary',
   backgroundColor: '$bgalt',
